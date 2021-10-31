@@ -2,126 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>hai-nd</title>
-    <link rel="stylesheet" href="photos.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-       *{
-           box-sizing: border-box;
-       } 
-       [class*="col-"]{
-           float: left;
-           padding: 10px;
-       }
-       .row::after{
-           clear: both;
-           content: "";
-       }
-       /*  for smart phone */
-       [class*="col-"]{
-           width: 100%;
-       }
-       /* for tablet */
-       @media only screen and (min-width: 600px){
-           .col-s-1{width: 8.33%}
-           .col-s-2{width: 16.66%}
-           .col-s-3{width:25%}
-           .col-s-4{width: 33.33%}
-           .col-s-5{width: 41.66%}
-           .col-s-6{width: 50%}
-           .col-s-7{width: 58.33%}
-           .col-s-8{width: 66.66%}
-           .col-s-9{width: 75%}
-           .col-s-10{width: 83.335}
-           .col-s-11{width: 91.66%}
-           .col-s-12{width: 100%}
-       }
-        /* for desktop */
-        @media only screen and (min-width:768px){
-            .col-1{width: 8.33%}
-           .col-2{width: 16.66%}
-           .col-3{width:25%}
-           .col-4{width: 33.33%}
-           .col-5{width: 41.66%}
-           .col-6{width: 50%}
-           .col-7{width: 58.33%}
-           .col-8{width: 66.66%}
-           .col-9{width: 75%}
-           .col-10{width: 83.335}
-           .col-11{width: 91.66%}
-           .col-12{width: 100%}
-        }
-        
-        .header{
-            background-color: aqua;
-            padding: 15px;
-        }
-        .footer{
-            background-color: aqua;
-            font-size: 20px;
-            padding: 10px;
-            clear: both;
+    <title>simple Template</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        }
-        .mennu ul{
-            padding: 0;
-            margin: 0;
-            list-style: none ;
-        }
-        .menu  ul li{
-            background-color: red;
-            padding: 15px;
-            margin: 5px 0;
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        }
-        
-        .menu li:hover{
-            background-color: #38A3CB;
-           
-        }
-        .right{
-            background-color: #8BC6EF;
-        }
-       
-    </style>
+<!-- Latest compiled JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcd.bootstranpcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lzn37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymuos">
+<style>
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        background-color: black;
+    }
+    header ul a{
+        color: white;
+    }
+    .left ul{
+        width: 100%;
+    }
+    .left li:hover{
+        background-color: black ;
+    }
+    footer{
+        background-color: black;
+        color: white;
+    }
+    .ad div{
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 200px;
+    }
 
-    
+</style>
 </head>
-
 <body>
-   <div class="container">
-        <div class="header">
-            <h1>Chainia</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-sm-12 col-md-12 col-lg-12">
+               <ul class="nav">
+                   <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                   <li class="nav-item"><a href="" class="nav-link">Product</a></li>
+                   <li class="nav-item"><a href="" class="nav-link">Download</a></li>
+                   <li class="nav-item"><a href="" class="nav-link">Contact</a></li>
+               </ul>
+            </header>
         </div>
         <div class="row">
-            <div class="col-3  col-s-3 menu">
-                <ul>
-                    <li>The Flight</li>
-                    <li>The city</li>
-                    <li>The Island</li>
-                    <li>The Food</li>
-                </ul>
-            </div>
-            <div class="col-6 col-s-9 main">
-                <h1>The city</h1>
-                <p>chania is the capital of the chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <div class="left col-lg-3">
+                <nav class="navbar bg-light">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="" class="nav-link">Link 1</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Link 2</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Link 3</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Link 4</a></li>
+                    </ul>
+                </nav>
 
             </div>
-            <div class="col-3 col-s-12 right">
-                <h2>what?</h2>
-                <p>chania is a city on the island of Crete.</p>
-                <h2>Where?</h2>
-                <p>Crete is a Greek island in the Mediterranean Sea.</p>
-                <h2>How?</h2>
-                <p>You can reach chania airport from all over Europe.</p>
+            <div class="right col-lg-9">
+                <div class="row">
+                    <div class="content col-lg-8">
+                        
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                        </article>
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                            <h1></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+                        <article>
+                            <h1>Heading</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </article>
+
+                        
+                    </div>
+                    <div class="ad col-lg-4">
+                        <div>ad</div>
+                        <div>ad</div>
+                        <div>ad</div>
+                        <div>ad</div>
+                        <div>ad</div>
+                        <div>ad</div>
+                        <div>ad</div>
+                        <div>ad</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                      </ul>
+                </div>
+                <div class="row">
+                    <footer>
+                        <div class="up">Footer</div>
+                        <div class="down">Power by me</div>
+                    </footer>
+                </div>
 
             </div>
         </div>
-        <div class="footer">
-            <p>Resize the brower window to see how the content respond to the resizing </p>
-        </div>
-   </div>
-
-    
+    </div>
 </body>
 </html>
